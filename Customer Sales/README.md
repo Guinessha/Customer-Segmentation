@@ -29,7 +29,8 @@ df.head()
 ```
 
 Now, let's take a look at the head of the data frame:
-! https://miro.medium.com/v2/resize:fit:640/format:webp/1*7TvqhjiJKNMBG1oVZ2HiWQ.png
+
+![DataSet](https://github.com/user-attachments/assets/03aa6d70-5d2c-4979-8ae3-95c646b0b453)
 
 Customer DatasetMy dataset contains customer data with the following columns:
 Customer ID: Customer ID
@@ -61,6 +62,8 @@ df[columns_to_scale] = scaled_df
 
 Now, let's see the results
 
+![normalisasi](https://github.com/user-attachments/assets/84114633-2a5f-4b42-903f-3533bcf5d721)
+
 ### Determining the Number of Clusters (K)
 Using the Elbow method, I tried various numbers of clusters to determine the optimal k value.
 ```python
@@ -77,6 +80,8 @@ plt.title('ELBOW METHOD')
 plt.show()
 ```
 Visualize model performance:
+
+![Elbow Method](https://github.com/user-attachments/assets/9da45909-bef3-4840-91ab-05077ad1f58a)
 
 Based on the elbow plot above, it can be seen that the optimal number of clusters is 4. So, in this case, I used 4 clusters to give the best results.
 
@@ -114,6 +119,7 @@ plt.show()
 
 Visualization of results:
 
+![PCA](https://github.com/user-attachments/assets/b9b37249-4ae3-4ce4-930b-9eb204711fce)
 
 ### Cluster Profiling 
 Next, we will create a summary of the key characteristics of each cluster. This will help us understand the unique traits of each segment.
@@ -125,6 +131,8 @@ cluster_profile = df_new[['Age', 'Income', 'Spending', 'Clusters']].groupby('Clu
 cluster_profile['size'] = df_new['Clusters'].value_counts()
 cluster_profile
 ```
+
+![summary](https://github.com/user-attachments/assets/a27040f3-eb06-485a-b5ce-2c8235bfe69d)
 
 ### Results and Analysis
 After running K-Means, I got 4 different customer segments. Here are the results of visualizing the segmentation in a scatter plot.
