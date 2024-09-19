@@ -1,16 +1,15 @@
-Customer Segmentation with K-Means: Understanding the Customer Closer
-Building a K-Means clustering algorithm for customer segmentation in Python
-Image by Jopwell from PexelsIntroduction
-Have you ever wondered why ads that appear on the internet sometimes feel so relevant? That's because many businesses use Customer Segmentation to understand their customers. Customer segmentation is the process of grouping customers based on similar characteristics, such as age, income, and spending habits.
-In this blog post, I will share about my experience of doing customer segmentation using K-Means Clustering. The goal? To develop a more targeted marketing strategy and offer more personalized services to each customer segment.
-Project Objective
+# Customer Segmentation with K-Means: Understanding the Customer Closer
+
+## Project Objective
 In this project, I use a dataset that contains customer information, including Gender, Age, Income, Spending, and product category. The main goal is categorizing customers into segments based on their spending patterns. By doing so, businesses can direct appropriate marketing campaigns to each segment and improve the effectiveness of sales strategies.
-Methods Used: K-Means Clustering
+
+## Methods Used: K-Means Clustering
 For customer segmentation, I used K-Means Clustering. This method is popular because it is fast and easy to use to group data based on similarities between data points.
-How does K-Means work?
+### How does K-Means work?
 Simply put, K-Means works by dividing data into a number of clusters (k) based on their similarity. K-Means is like sorting something into piles. Imagine you have a bunch of different objects, and you want to organize them into piles where each pile contains similar objects. K-Means helps you figure out which objects go into each pile by adjusting the piles repeatedly until they all fit.
-Now let's get started
-Import Library and Reading Dataset
+
+### Let's get started
+## Import Library and Reading Dataset
 The following lines of code are for importing the required libraries and reading the data set:
 #LIBRARY
 import pandas as pd
@@ -24,6 +23,7 @@ from sklearn.decomposition import PCA
 #Reading a Dataset
 df = pd.read_csv('customer_data.csv')
 df.head()
+
 Now, let's take a look at the head of the data frame:
 Customer DatasetMy dataset contains customer data with the following columns:
 Customer ID: Customer ID
