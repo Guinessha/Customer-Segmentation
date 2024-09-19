@@ -29,6 +29,7 @@ df.head()
 ```
 
 Now, let's take a look at the head of the data frame:
+! https://miro.medium.com/v2/resize:fit:640/format:webp/1*7TvqhjiJKNMBG1oVZ2HiWQ.png
 
 Customer DatasetMy dataset contains customer data with the following columns:
 Customer ID: Customer ID
